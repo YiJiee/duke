@@ -11,7 +11,7 @@ public class Deadline extends Task {
     @Override
     public String toString() {
         String displayDate = this.date.substring(0, 2) + ": " + this.date.substring(3);
-        return "[E][" + super.getStatusIcon() + "] "
+        return "[D][" + super.getStatusIcon() + "] "
                 + super.description + " (" + displayDate + ")";
     }
 }
