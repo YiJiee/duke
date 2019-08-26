@@ -20,7 +20,7 @@ public class DeleteCommand implements Command {
         if (tasks.size() < taskNumber) {
             System.out.print("Error! Task cannot be found~!");
         } else {
-            Task removed = tasks.removeTask(taskNumber);
+            Task removed = tasks.removeTask(taskNumber - 1);
             storage.updateTasks(tasks);
             ui.nextLine("    ____________________________________________________________\n" +
                     "     Noted. I've removed this task: \n" +
